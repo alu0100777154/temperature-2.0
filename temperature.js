@@ -7,7 +7,6 @@ function Medida(valor, tipo) {
     this.get_valor = function(){
         return this.valor;
     };
-    
     this.get_tipo = function(){
         return this.tipo;
     };
@@ -17,9 +16,17 @@ function Medida(valor, tipo) {
     this.set_tipo = function(tipo){
         this.tipo=tipo;
     };
-    
-    
-};
+    /*this.devolver = function(type) {
+      if (!type)
+        throw new Error("missing tipo");
+      return this.valor + type;
+    };*/
+    this.devolver = function(type) {
+      if (!type)
+        return console.error("missing type");
+      console.log(this.valor + " greets " + type);
+    };
+  };
 
 function Temperatura () {
 }
