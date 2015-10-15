@@ -1,8 +1,8 @@
 "use strict"; // Use ECMAScript 5 strict mode in browsers that support it
 
 function Medida(valor, tipo) {
-    this.valor=valor;
-    this.tipo=tipo;
+    this.valor=valor || 0;
+    this.tipo=tipo || "C";
     
     this.get_valor = function(){
         return this.valor;
