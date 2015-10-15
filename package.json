@@ -1,16 +1,13 @@
 {
-  "name": "public_html",
-  "version": "1.0.0",
-  "description": "Temperature converter",
+  "name": "temperature-2.0",
+  "version": "0.0.0",
+  "description": "**Url del repositorio:**",
   "main": "temperature.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "author": "Guillermo Sánchez",
-  "license": "ISC",
-  "keywords": [
-    "regexp"
-  ],
+  
+  
   "devDependencies": {
     "chai": "~3.3.0",
     "del": "^2.0.2",
@@ -21,6 +18,16 @@
     "gulp-open": "^1.0.0",
     "gulp-uglify": "^1.4.1",
     "gulp-util": "^3.0.6",
-    "mocha": "latest"
+    "mocha": "*",
+    "node-static": "~0.7.6"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://alu0100777154@github.com/alu0100777154/temperature-2.0"
+  },
+  "author": "Guillermo Sánchez",
+  "license": "BSD",
+  "bugs": {
+    "url": "https://github.com/alu0100777154/temperature-2.0/issues"
   }
 }

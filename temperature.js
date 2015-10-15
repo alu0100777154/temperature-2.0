@@ -64,6 +64,3 @@ function calculate() {
     converted.innerHTML = "ERROR! Try something like '-4.2C' instead";
   }
 }
-
-
-
