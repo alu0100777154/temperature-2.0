@@ -12,8 +12,10 @@
   <script src="chai.js"></script>
   <script src="mocha.js"></script>
   <script src="sinon-1.17.1.js"></script>
-  <script src="../temperature.js"></script>
+  <script src="blanket.js"
+          data-cover-adapter="mocha-blanket.js"></script>
   <script>mocha.setup('bdd')</script>
+  <script src="../temperature.js" data-cover></script>
   <script src="tests.js"></script>
   <script>mocha.run();</script>
 </body>
