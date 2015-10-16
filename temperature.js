@@ -35,11 +35,11 @@ Temperatura.prototype = new Medida();
 Temperatura.prototype.constructor = Temperatura;
 
 Temperatura.prototype.CtoF = function(){
-  return (get_valor()*9/5)+32;
+  return (this.get_valor()*9/5)+32;
 };
 
 Temperatura.prototype.FtoC = function(){
-  return (get_valor()-32)*5/9;
+  return (this.get_valor()-32)*5/9;
 };
 
 

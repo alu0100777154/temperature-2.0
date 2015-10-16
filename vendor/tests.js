@@ -1,4 +1,5 @@
 var expect = chai.expect;
+var assert = chai.assert;
 
 var sandbox;
   beforeEach(function() {
@@ -15,8 +16,33 @@ var sandbox;
     sandbox.restore();
   });
 
+describe('Temperatura', function() {
+    it('valor', function() {
+        var temp = new Temperatura;
+        temp.set_valor(5);
+        expect(temp.get_valor()).to.equal(5);
+    });
+    it('tipo', function() {
+        var temp = new Temperatura;
+        temp.set_tipo("F");
+        expect(temp.get_tipo()).to.equal("F");
+    });
+    it('CtoF', function() {
+        var temp = new Temperatura;
+        temp.set_valor(45);
+        temp.set_tipo("C");
+        expect(temp.CtoF()).to.equal(113);
+    });
+    it('FtoC', function() {
+        var temp = new Temperatura;
+        temp.set_valor(113);
+        temp.set_tipo("F");
+        expect(temp.FtoC()).to.equal(45);
+    });
+});
 
-describe("Tests temperature", function() {
+
+describe("Blanket", function() {
   describe("constructor", function() {
     it("should have a default temp", function() {
       var temp = new Temperatura();
