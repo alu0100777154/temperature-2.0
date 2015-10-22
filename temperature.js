@@ -1,5 +1,9 @@
 "use strict"; // Use ECMAScript 5 strict mode in browsers that support it
 
+var first = document.querySelector('#original');
+
+var result = document.querySelector('#converted');
+
 function Medida(valor, tipo) {
     this.valor=valor || 0;
     this.tipo=tipo || "C";
@@ -36,8 +40,25 @@ Temperatura.prototype.FtoC = function(){
 };
 
 
+if (window.Worker) { //check if Browser supports the Worker api.
+	// Requires script name as input
+	var myWorker = new Worker("worker.js");
+
+	first.onchange = function() {
+	  myWorker.postMessage([first.value]); //sending message as array to the worker
+	  console.log('Message posted to worker '+first.value);
+	};
 
 
+	myWorker.onmessage = function(e) {
+                console.log(e);
+		result.textContent = e.data;
+		console.log('Message received from worker '+e.data);
+	};
+}
+
+
+/*
 function calculate() {
   var result;
   var temp = new Temperatura;
@@ -63,4 +84,4 @@ function calculate() {
   else {
     converted.innerHTML = "ERROR! Try something like '-4.2C' instead";
   }
-}
+}*/
