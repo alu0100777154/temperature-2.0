@@ -3,7 +3,7 @@
 
 **Url del repositorio:** 
 
-[Repositorio]()
+[Repositorio](https://github.com/alu0100777154/temperature-2.0/tree/master)
 
 **Page de la práctica:** 
 
@@ -11,7 +11,7 @@
 
 **Page de los tests:** 
 
-[Tests](http://alu0100777154.github.io/temperature-2.0/)
+[Tests](http://alu0100777154.github.io/temperature-2.0/vendor)
 
 **Página personal**
 
