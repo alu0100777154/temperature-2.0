@@ -5,19 +5,21 @@
         <link href="normalize.css" rel="stylesheet" type="text/css">
         <link href="global.css" rel="stylesheet" type="text/css">
 
-        <script type="text/javascript" src="temperature.js"></script>
+
     </head>
     <body>
         <h1>Temperature Converter</h1>
         <table>
             <tr>
                 <th>Enter  Temperature (examples: 32F, 45C, -2.5f):</th>
-                <td><input id="original" autofocus onchange="calculate();" placeholder="32F" size="50"></td>
+                <td><input id="original"  placeholder="32F" size="50"></td>
             </tr>
             <tr>
                 <th>Converted Temperature:</th>
                 <td><span class="output" id="converted"></span></td>
             </tr>
         </table>
+        <script src="temperature.js"></script>
+        <script src="worker.js"></script>
     </body>
 </html>
