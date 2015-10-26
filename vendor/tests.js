@@ -27,7 +27,7 @@ suite('temperature', function() {
     });
 });
 
-
+/*
 var sandbox;
   beforeEach(function() {
     // create a sandbox
@@ -42,7 +42,7 @@ var sandbox;
     // restore the environment as it was before
     sandbox.restore();
   });
-
+*/
 describe('Temperatura', function() {
     it('valor', function() {
         var temp = new Temperatura;
