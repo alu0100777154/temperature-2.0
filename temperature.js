@@ -1,8 +1,8 @@
 "use strict"; // Use ECMAScript 5 strict mode in browsers that support it
 
-var first = document.querySelector('#original');
+var first = document.getElementById('original');
 
-var result = document.querySelector('#converted');
+var result = document.getElementById('converted');
 
 
 if (window.Worker) { //check if Browser supports the Worker api.
