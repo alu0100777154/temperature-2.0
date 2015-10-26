@@ -42,7 +42,7 @@ var sandbox;
     // restore the environment as it was before
     sandbox.restore();
   });
-*/
+*//*
 describe('Temperatura', function() {
     it('valor', function() {
         var temp = new Temperatura;
@@ -80,6 +80,7 @@ describe("Blanket", function() {
       expect(temp.tipo).to.equal("C");
     });
   });
+*/
 /*
   describe("#tipo", function() {
     it("should throw if no type is passed in", function() {
@@ -89,6 +90,7 @@ describe("Blanket", function() {
     });
   });
 */
+/*
     describe("#tipo", function() {
     it("should log an error if no type is passed in", function() {
       (new Temperatura()).devolver();
@@ -99,3 +101,4 @@ describe("Blanket", function() {
     });
    });
 });
+*/
