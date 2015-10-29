@@ -6,30 +6,35 @@ module.exports = function(config) {
     basePath: '',
 
     // frameworks to use
-    frameworks: ['mocha'],
+    frameworks: ['mocha', 'chai'],
 
     client: {
           mocha: {
-            ui: 'tdd'
+            ui: 'bdd'
           }
     },
 
+
+    // preprocess matching files before serving them to the browser
+    // available preprocessors: https://npmjs.org/browse/keyword/karma-preprocessor
     preprocessors: {
-          'tests/test.html': ['html2js']
+     'vendor/index.html': ['html2js']
     },
-
-
+    
+    
     // list of files / patterns to load in the browser
     files: [
-      'vendor/test.html',
+      'vendor/index.html',
       'vendor/*.js',
-      'temperature.js',
       'worker.js'
     ],
 
 
     // list of files to exclude
     exclude: [
+        'gulpfile.js',
+        'static-server.js',
+        'temperature.js'
 
     ],
 

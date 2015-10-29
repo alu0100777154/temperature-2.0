@@ -1,13 +1,12 @@
-"use strict"; // Use ECMAScript 5 strict mode in browsers that support it
 
-var first = document.getElementById('original');
-
-var result = document.getElementById('converted');
+ var first = document.querySelector('#original');
+ var result = document.querySelector('#converted');
 
 
 if (window.Worker) { //check if Browser supports the Worker api.
 	// Requires script name as input
 	var myWorker = new Worker("worker.js");
+       
 
 	first.onchange = function() {
 	  myWorker.postMessage([first.value]); //sending message as array to the worker

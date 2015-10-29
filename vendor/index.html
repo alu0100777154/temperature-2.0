@@ -1,19 +1,24 @@
+<!DOCTYPE html>
 <html>
   <head>
     <title>Mocha</title>
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="mocha.css">
 
   </head>
   <body>
     <div id="mocha"></div>
-    <input id="original" value="32F" size="50">
-    <span class="output" id="converted"></span>
-
-    <script src="../temperature.js"></script>
-    <script>mocha.setup('tdd')</script>
+    <div id="messages"></div>
+    <div id="fixtures"></div>
+    <script src="mocha.js"></script>
+    <script src="chai.js"></script>
+    <script src="sinon-1.7.1.js"></script>
+    <script src="blanket.js"
+          data-cover-adapter="mocha-blanket.js"></script>
+    <script>mocha.setup('bdd');</script>
+    <script src="../worker.js" data-cover></script>
     <script src="tests.js"></script>
-
     <script>
       mocha.run();
     </script>

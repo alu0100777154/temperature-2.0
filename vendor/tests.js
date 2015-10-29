@@ -1,6 +1,6 @@
-var expect = chai.expect;
-var assert = chai.assert;
-
+var expect = chai.expect,
+    should = chai.should();
+/*
 suite('temperature', function() {
     setup(function(){
       if (typeof __html__ !== 'undefined') {
@@ -26,23 +26,8 @@ suite('temperature', function() {
         assert.match(converted.innerHTML, /ERROR/);
     });
 });
+*/
 
-/*
-var sandbox;
-  beforeEach(function() {
-    // create a sandbox
-    sandbox = sinon.sandbox.create();
-
-    // stub some console methods
-    sandbox.stub(window.console, "log");
-    sandbox.stub(window.console, "error");
-  });
-
-  afterEach(function() {
-    // restore the environment as it was before
-    sandbox.restore();
-  });
-*//*
 describe('Temperatura', function() {
     it('valor', function() {
         var temp = new Temperatura;
@@ -80,8 +65,8 @@ describe("Blanket", function() {
       expect(temp.tipo).to.equal("C");
     });
   });
-*/
-/*
+
+
   describe("#tipo", function() {
     it("should throw if no type is passed in", function() {
       expect(function() {
@@ -89,16 +74,5 @@ describe("Blanket", function() {
       }).to.throw(Error);
     });
   });
-*/
-/*
-    describe("#tipo", function() {
-    it("should log an error if no type is passed in", function() {
-      (new Temperatura()).devolver();
 
-      sinon.assert.notCalled(console.log);
-      sinon.assert.calledOnce(console.error);
-      sinon.assert.calledWithExactly(console.error, "missing type");
-    });
-   });
 });
-*/
