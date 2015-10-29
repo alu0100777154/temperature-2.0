@@ -4,7 +4,7 @@
   "description": "**Url del repositorio:**",
   "main": "temperature.js",
   "scripts": {
-    "test": "karma start --single-run"
+    "test": "karma start --browsers Firefox --single-run"
   },
   "devDependencies": {
     "chai": "~3.3.0",
