@@ -1,4 +1,4 @@
-# Práctica 3 Conversor temperaturas con Clases
+# Práctica 4 Conversor temperaturas con Web Worker
 ## Guillermo Vicente Sánchez Guindulain
 
 **Url del repositorio:** 
