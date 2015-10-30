@@ -42,11 +42,11 @@
 
 * Clonamos el repositorio de la práctica e instalamos las dependencias
 
->#####npm install
+              npm install
 
 * Ejecutamos el static-server.js
 
 ![server](http://i.imgur.com/dpDaFHo.png)
 
 * ya podemos acceder a nuestra aplicación web:
->#####http://10.6.128.80:8080/
+              http://10.6.128.80:8080/
